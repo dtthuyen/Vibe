@@ -1,0 +1,162 @@
+
+  body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    background-color: rgb(13, 13, 13);
+    color: white;
+  }
+  
+  .container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    visibility: hidden;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container > div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30vh;
+    display: inline-block;
+  }
+  
+  .onetext {
+    font-size: 4rem;
+  }
+  
+  .oneface {
+    margin-top: 5vh;
+    font-size: 3rem;
+    color: yellow;
+  }
+  
+  .two {
+    font-size: 2rem;
+    margin-top: 5vh;
+  }
+  
+  .three p {
+    font-size: 3rem;
+  }
+  
+  .four p {
+    font-size: 4.2rem;
+    color: yellow;
+  }
+  
+  .five p {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  
+  .idea-4 {
+    font-size: 4.5rem;
+  }
+  
+  .idea-3 strong {
+    padding: 4px 6px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-left: 8px;
+  }
+  
+  .idea-3 {
+    font-size: 3.5rem;
+  }
+  
+  .smiley {
+    font-size: 4.5rem;
+  }
+  
+  .texti5 {
+    font-size: 4rem;
+    color: yellow;
+  }
+  
+  .idea-6 span {
+    display: inline-block;
+  }
+  
+  .idea-5 span {
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: 5px;
+  }
+  
+  .textwm {
+    font-size: 4rem;
+    font-weight: lighter;
+    line-height: 100px;
+    margin-top: 5vh;
+  }
+  
+  .idea-6 span {
+    font-size: 15rem;
+  }
+  
+  .seven p {
+    font-size: 6rem;
+  }
+
+  .eight p {
+    font-size: 6rem;
+    color: yellow;
+  }
+  
+  .six p {
+    font-size: 3rem;
+  }
+  
+  .wish {
+    color: rgb(172, 172, 172);
+  }
+  
+  .textw {
+    color: yellow;
+    margin-top: 5vh;
+    line-height: 4.5rem;
+  }
+  
+  .nine p {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+  
+  .tenText {
+    font-size: 2.7rem;
+    margin-top: 4vh;
+  }
+  
+  .troll {
+   font-size: 2rem;
+   font-weight: lighter;
+   margin-top: 5vh;
+  }
+  
+  .textFinal {
+    color: yellow;
+    font-size: 4rem;
+  }
+  
+  .last-smile {
+    font-size: 5rem;
+    margin-top: 7vh;
+  }
+  
+  .sign {
+    justify-content: flex-end;
+    padding: 0px 25px;
+    text-align: right;
+    align-items: center;
+  }
+  
+  .sign p {
+    color: rgb(255, 253, 255);
+    font-size: 1.5rem;
+  }

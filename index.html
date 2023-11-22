@@ -3,14 +3,83 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>iu :)</title>
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>happy birthday</title>
 </head>
 
+<style>
+  @media screen and (max-width: 750px) {
+    .star {
+      animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
+    }
+  }
+
+  @keyframes fall {
+    to {
+      transform: translateX(0em);
+    }
+  }
+
+  @keyframes tail-fade {
+
+    0%,
+    50% {
+      width: var(--star-tail-length);
+      opacity: 1;
+    }
+
+    70%,
+    80% {
+      width: 0;
+      opacity: 0.4;
+    }
+
+    100% {
+      width: 0;
+      opacity: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
 <body>
+  <canvas id="c"></canvas>
+  <div class="scene">
+    <div class="stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div class="moon">
+      <img src="./assets/moon.png" alt="moon" srcset="">
+    </div>
+  </div>
 
   <div class="container">
     <div class="one">
@@ -75,12 +144,17 @@
       <p class="last-smile" text-content="outroSmiley"></p>
     </div>
   </div>
-  <!-- <footer class="sign">
-    <p>from dtth to nhl 24/11/2023</p>
-  </footer> -->
+
+
+  <audio src="./assets/Happy Birthday!.mp3" autoplay loop></audio>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-<script type="application/javascript" src="main.js"></script>
+<script src="./scripts/background.js"></script>
+<script src="./scripts/main.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+<link rel="stylesheet" href="./styles/style_background.css">
+<link rel="stylesheet" href="./styles/style_content.css">
 
 </html>
